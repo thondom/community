@@ -1,4 +1,4 @@
-const URL = "http://localhost:3000"; //https://thondom.herokuapp.com/
+const URL = "https://thondom.herokuapp.com"; 
 const socket = io.connect(URL, {
     query: {
         token: getTokenBearer()
