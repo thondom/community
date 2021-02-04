@@ -163,13 +163,13 @@ $(document).ready(function(){
 
       function returnOptions () {
           let return_options_dom = ''; 
-          return_options_dom += "<div class='icon-options setting-options bg-default' style='background-image: url(./community/images/setting.svg)'></div><div class='icon-options logout-options bg-default' style='background-image: url(/images/logout.svg)'></div>";
+          return_options_dom += "<div class='icon-options setting-options bg-default' style='background-image: url(/community/images/setting.svg)'></div><div class='icon-options logout-options bg-default' style='background-image: url(/images/logout.svg)'></div>";
           $('.right').append(return_options_dom);
       }
 
       function returnListUsers () {
          let return_list_users = '';
-         return_list_users += "<div class='users-online bg-default' style='background-image: url(./community/images/users.svg)'><div class='edge-users-online short-text-1'>100</div></div>";
+         return_list_users += "<div class='users-online bg-default' style='background-image: url(/community/images/users.svg)'><div class='edge-users-online short-text-1'>100</div></div>";
          $('.result--comment').append(return_list_users)
       }
 
