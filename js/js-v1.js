@@ -163,7 +163,7 @@ $(document).ready(function(){
 
       function returnOptions () {
           let return_options_dom = ''; 
-          return_options_dom += "<div class='icon-options setting-options bg-default' style='background-image: url(images/setting.svg)'></div><div class='icon-options logout-options bg-default' style='background-image: url(/images/logout.svg)'></div>";
+          return_options_dom += "<div class='icon-options setting-options bg-default' style='background-image: url(images/setting.svg)'></div><div class='icon-options logout-options bg-default' style='background-image: url(images/logout.svg)'></div>";
           $('.right').append(return_options_dom);
       }
 
