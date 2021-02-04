@@ -208,10 +208,10 @@ $(document).ready(function(){
            let validateYourName = (!/^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀẾỂưăạảấầẩẫậắằẳẵặẹẻẽềếểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s]{1,20}$/.test(yourname));
            let validateYourStatus = ['1', '2', '3', '4', '5'];
                if (validateYourName) {
-                   alert('Táo trưởng thôn cho biết: \nTên của bạn không hợp lệ. Thử lại với tên thật của cháu nhe!');
+                   alert('Tên của bạn không hợp lệ. Thử lại với tên thật của bạn nhe!');
                }
                else if (!validateYourStatus.includes(yourstatus)){
-                   alert('Táo trưởng thôn cho biết: \nHãy chọn đánh giá bằng quả dừa bên dưới! (1 quả dừa = 1 sao)');
+                   alert('Hãy chọn trạng thái của bạn.');
                }
                else {
                     let json_data = {client_name: yourname, client_status:yourstatus};
@@ -238,13 +238,13 @@ $(document).ready(function(){
              let filterComment = textComment.replace(/<(.|\n)*?>/g, '');
              let trimComment = $.trim(filterComment);
              if (!trimComment) {
-                   alert('Táo trưởng thôn cho biết: \nNhận xét của bạn không hợp lệ. Vui lòng thử lại sau!');
+                   alert('\nNhận xét của bạn không hợp lệ. Vui lòng thử lại sau!');
              }
              else if (trimComment.length < 1) {
-                   alert('Táo trưởng thôn cho biết: \nNhận xét của bạn không hợp lệ. Vui lòng thử lại sau!');                  
+                   alert('\nNhận xét của bạn không hợp lệ. Vui lòng thử lại sau!');                  
              }
              else if (trimComment.length > 1000) {
-                   alert('Táo trưởng thôn cho biết: \nNhận xét của bạn quá dài. Vui lòng thử lại sau!');                  
+                   alert('\nNhận xét của bạn quá dài. Vui lòng thử lại sau!');                  
              }           
              else {
                    socket.emit('new_message', trimComment);
